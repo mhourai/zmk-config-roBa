@@ -78,19 +78,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                  &kp F1          &kp UP_ARROW    &kp F3           &kp NON_US_BACKSLASH  &kp BACKSPACE
-&trans      &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &kp F13  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F9                &kp AT_SIGN
-&trans      &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans      &trans   &mkp MB4        &kp SEMICOLON   &kp COLON        &kp RS(MINUS)         &kp SLASH
-&trans      &trans           &trans             &trans                &trans                 &trans      &trans   &trans                                                                 &kp F12
+&kp ESCAPE       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                  &mkp MCLK       &kp UP_ARROW    &kp F3           &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp PRINTSCREEN  &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &kp F13  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
+&kp TILDE        &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans      &trans   &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
+&trans           &trans           &trans             &trans                &trans                 &trans      &trans   &trans                                                                 &kp PIPE
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp F1  &kp F2   &kp F3   &kp F4                                                 &kp CARET        &kp AMPERSAND    &kp TILDE        &kp LEFT_PARENTHESIS  &kp DEL
-&kp SLASH                   &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp HASH         &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp F9  &kp F10  &kp F11  &kp F12  &kp EQUAL                    &kp KP_NUMBER_0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans  &trans   &trans   &trans   &trans                       &trans           &trans                                                                   &kp PIPE
+&kp GRAVE                   &kp F1  &kp F2   &kp F3   &kp F4                                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS    &kp BACKSPACE
+&kp SLASH                   &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS   &kp ASTERISK
+&mt LEFT_SHIFT KP_NUMBER_0  &kp F9  &kp F10  &kp F11  &kp F12  &kp EQUAL                    &kp KP_NUMBER_0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp SLASH
+&trans                      &trans  &trans   &trans   &trans   &trans                       &trans           &trans                                                         &kp UNDERSCORE
             >;
         };
 
