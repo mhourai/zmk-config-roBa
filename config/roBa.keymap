@@ -83,7 +83,6 @@
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &mt LEFT_SHIFT LANG_ZENKAKUHANKAKU      &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
