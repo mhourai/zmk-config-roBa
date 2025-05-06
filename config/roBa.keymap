@@ -82,7 +82,7 @@
 &kp Q             &kp W      &kp E         &kp R      &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S      &kp D         &kp F      &kp G      &kp LS(LG(S))                &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &kp LANG_ZENKAKUHANKAKU      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
-&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &kp LANG_ZENKAKUHANKAKU      &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
+&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &mt RIGHT_SHIFT LANG5        &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
