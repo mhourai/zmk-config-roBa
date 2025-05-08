@@ -90,10 +90,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                          &mkp MCLK       &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp GRAVE   &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
-&kp TILDE   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &trans   &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
-&trans      &trans           &trans             &trans                &trans                 &trans              &trans   &trans                                                                 &kp PIPE
+&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                         &mkp MCLK       &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp GRAVE   &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &mo 3   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
+&kp TILDE   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &trans  &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
+&trans      &trans           &trans             &trans                &trans                 &trans              &trans  &trans                                                                 &kp PIPE
             >;
         };
 
@@ -108,10 +108,10 @@
 
         device {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                               &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &none                    &kp END  &bt BT_NXT      &sys_reset  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans          &sys_reset  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans          &trans      &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &none                    &kp END  &bt BT_NXT      &sys_reset  &trans        &trans        &trans        &trans        &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans          &sys_reset  &trans        &trans        &trans        &trans        &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans          &trans      &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
