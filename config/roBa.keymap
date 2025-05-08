@@ -80,27 +80,27 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R      &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F      &kp G      &kp LS(LG(S))                   &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &kp LANG_ZENKAKUHANKAKU         &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
+&kp A             &kp S      &kp D         &kp F      &kp G      &kp LANG_HANJA                  &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &kp LANGUAGE_1                  &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &mt RIGHT_SHIFT INT_HENKAN      &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_down_up>, <&inc_dec_kp 0 0>;
         };
 
         FUNCTION {
             bindings = <
-&kp ESCAPE       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                          &mkp MCLK       &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp PRINTSCREEN  &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
-&kp TILDE        &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &trans   &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
-&trans           &trans           &trans             &trans                &trans                 &trans              &trans   &trans                                                                 &kp PIPE
+&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                          &mkp MCLK       &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp GRAVE   &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
+&kp TILDE   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &trans   &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
+&trans      &trans           &trans             &trans                &trans                 &trans              &trans   &trans                                                                 &kp PIPE
             >;
         };
 
         NUM {
             bindings = <
 &kp GRAVE                   &kp F1  &kp F2   &kp F3   &kp F4                                                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS    &kp DELETE
-&kp SLASH                   &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS   &kp ASTERISK
+&kp PSCRN                   &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS   &kp ASTERISK
 &mt LEFT_SHIFT KP_NUMBER_0  &kp F9  &kp F10  &kp F11  &kp F12  &kp EQUAL                    &kp KP_NUMBER_0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp SLASH
 &trans                      &trans  &trans   &trans   &trans   &trans                       &trans           &trans                                                         &kp UNDERSCORE
             >;
