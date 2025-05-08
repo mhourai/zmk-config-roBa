@@ -81,7 +81,7 @@
             bindings = <
 &kp Q             &kp W      &kp E         &kp R      &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S      &kp D         &kp F      &kp G      &kp LANG_HANJA                  &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &kp LANGUAGE_1                  &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &mo 3                           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &mt RIGHT_SHIFT INT_HENKAN      &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
             >;
 
