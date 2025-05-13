@@ -80,7 +80,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R      &kp T                                                     &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F      &kp G      &kp LANG_HANJA                  &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S      &kp D         &kp F      &kp G      &kp LANG_HANJA                  &mo 3          &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B      &mo 3                           &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mkp LCLK
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LCTRL  &lt 3 TAB  &mt RIGHT_SHIFT INT_HENKAN      &lt 2 ENTER    &lt 1 SPACE                             &mkp RCLK
             >;
@@ -108,10 +108,10 @@
 
         device {
             bindings = <
-&none  &none  &none  &none   &none                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none  &none  &none  &none   &none   &bootloader      &none   &trans        &trans        &trans        &trans        &trans
-&none  &none  &none  &none   &none   &bootloader      &none   &trans        &trans        &trans        &trans        &trans
-&none  &none  &none  &trans  &trans  &trans           &trans  &trans                                                  &trans
+&none  &none  &none  &none   &none                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none  &none   &none   &bootloader      &none        &trans        &trans        &trans        &trans        &trans
+&none  &none  &none  &none   &none   &bootloader      &bootloader  &trans        &trans        &trans        &trans        &trans
+&none  &none  &none  &trans  &trans  &trans           &trans       &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
