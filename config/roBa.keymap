@@ -91,7 +91,7 @@
             bindings = <
 &kp ESCAPE  &kp EXCLAMATION  &kp AT     &kp HASH               &kp DOLLAR                                               &kp DOUBLE_QUOTES  &kp UP_ARROW    &kp MINUS        &kp JP_YEN            &kp BACKSPACE
 &kp AMPS    &kp PERCENT      &kp CARET  &kp JP_LPAREN          &kp LEFT_PARENTHESIS  &trans              &mkp MB4       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp LEFT_BRACKET
-&kp PLUS    &kp RIGHT_BRACE  &kp PIPE   &kp RIGHT_BRACKET      &kp BACKSLASH         &studio_unlock      &kp SEMICOLON  &kp SINGLE_QUOTE   &kp COMMA       &kp PERIOD       &kp UNDER             &kp SLASH
+&kp PLUS    &kp RIGHT_BRACE  &kp PIPE   &kp RIGHT_BRACKET      &kp BACKSLASH         &kp JP_UNDERSCORE      &kp SEMICOLON  &kp SINGLE_QUOTE   &kp COMMA       &kp PERIOD       &kp UNDER             &kp SLASH
 &trans      &trans           &trans     &trans                 &trans                &trans              &trans         &trans                                                                    &kp JP_PIPE
             >;
         };
