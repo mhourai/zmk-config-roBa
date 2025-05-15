@@ -89,10 +89,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                         &mkp MCLK       &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp GRAVE   &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &mo 3   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp AT_SIGN
-&kp TILDE   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &trans  &mkp MB4        &kp SEMICOLON   &kp COLON        &kp UNDER             &kp SLASH
-&trans      &trans           &trans             &trans                &trans                 &trans              &trans  &trans                                                                 &kp PIPE
+&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                                &kp DEL         &kp UP_ARROW    &kp MINUS        &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp GRAVE   &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &mkp MB4       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL             &kp LEFT_BRACKET
+&kp TILDE   &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &studio_unlock      &kp SEMICOLON  &kp COLON       &kp COMMA       &kp COLON        &kp UNDER             &kp SLASH
+&trans      &trans           &trans             &trans                &trans                 &trans              &trans         &trans                                                                 &kp PIPE
             >;
         };
 
