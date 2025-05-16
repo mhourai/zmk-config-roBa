@@ -1,0 +1,86 @@
+#include "roBa_L.keymap"
+
+#include "boards/shields/Test/roBa_R.overlay"
+
+#include <input/processors.dtsi>
+/ {
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <
+            18 // J
+            19 // K
+            // 20 // L
+            21 // ;
+            22 // Z
+            // 31 // .
+            // 32 // ,
+            // 33 // /
+            34 // Ctrl
+        >;
+    };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer MOUSE 10000>;
+    };
+};
+
+&trackball {
+    scroll-layers = <EXTRA_FINCTIONS>;
+    // snipe-layers = <3>;
+
+    arrows {
+        layers = <MISC>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+    };
+
+    volume {
+        layers = <MEDIA>;
+        bindings =
+            <&none>,
+            <&none>,
+            <&kp C_VOLUME_UP>,
+            <&kp C_VOLUME_DOWN>;
+    };
+
+    ctrl_alt_tab {
+        layers = <CTRL_ALT_TAB_TB>;
+        bindings =
+            <&to_kp ALT_TAB_TB TAB>,
+            <&to_kp ALT_TAB_TB LS(TAB)>,
+            <&to_kp CTRL_TAB_TB LCTRL>,
+            <&to_kp CTRL_TAB_TB LS(LCTRL)>;
+        tick = <10>;
+    };
+
+    alt_tab {
+        layers = <ALT_TAB_TB>;
+        bindings =
+            <&kp TAB>,
+            <&kp LS(TAB)>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <80>;
+    };
+
+    ctrl_tab {
+        layers = <CTRL_TAB_TB>;
+        bindings =
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>,
+            <&kp LS(TAB)>,
+            <&kp TAB>;
+
+        tick = <80>;
+    };
+};
