@@ -77,19 +77,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3    &kp N4                          &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans   &kp N5  &kp N6  &kp N7    &kp N8    &trans      &kp F13   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans   &sk N8  &trans  &kp LBKT  &kp RBKT  &trans      &kt SEMI  &trans  &trans  &trans  &trans  &kp F11
-&trans   &trans  &trans  &trans    &trans    &trans      &trans    &trans                          &kp F12
+&kp ESC  &kp EXCL        &kp DOUBLE_QUOTES  &kp HASH              &kp N4                                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans   &kp N5          &kp N6             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &kp F13   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans   &sk LEFT_BRACE  &kp RIGHT_BRACE    &kp LBKT              &kp RBKT               &trans      &kt SEMI  &trans  &trans  &trans  &trans  &kp F11
+&trans   &trans          &trans             &trans                &trans                 &trans      &trans    &trans                          &kp F12
             >;
         };
 
-        NUM {
+        NUM-FUNCTION {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mkp MB4
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                           &mkp MCLK
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                    &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp KP_ASTERISK  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans           &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mkp MB4
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans           &trans                                                           &mkp MCLK
             >;
         };
 
