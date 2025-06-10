@@ -83,10 +83,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp F1           &kp F2           &kp F3           &kp F4                                                 &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&kp PRINTSCREEN             &kp F5           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp DELETE  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp SLASH   &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans      &trans                                                           &kp PIPE
+&kp MINUS                   &kp F1  &kp F2   &kp F3   &kp F4                                            &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp PRINTSCREEN             &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(LA(KP_NUMBER_0))      &kp DELETE  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK
+&mt LEFT_SHIFT KP_NUMBER_0  &kp F9  &kp F10  &kp F11  &kp F12  &kp EQUAL                    &kp SLASH   &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
+&trans                      &trans  &trans   &trans   &trans   &trans                       &trans      &trans                                                           &kp PIPE
             >;
         };
 
