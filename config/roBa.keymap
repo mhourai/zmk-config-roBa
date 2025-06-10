@@ -45,7 +45,7 @@
 &kp Q             &kp W      &kp E         &kp R             &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                 &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                     &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
+&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
