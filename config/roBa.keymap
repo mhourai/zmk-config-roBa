@@ -74,10 +74,10 @@
 
         arrow-character {
             bindings = <
-&kp ESC    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                                &kp N1     &kp F2          &kp UP_ARROW  &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp SQT    &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13        &kp F6     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp AT
-&kp TILDE  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LBKT              &kp RBKT               &kp UNDERSCORE      &kp SEMICOLON  &kp COLON  &trans          &trans        &trans                &kp SLASH
-&trans     &trans           &trans             &trans                &trans                 &trans              &trans         &trans                                                         &kp PIPE
+&kp ESC    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                                &kp ASTERISK  &kp F2          &kp UP_ARROW  &kp NON_US_BACKSLASH  &kp BACKSPACE
+&kp SQT    &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13        &kp F6        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp AT
+&kp TILDE  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LBKT              &kp RBKT               &kp UNDERSCORE      &kp SEMICOLON  &kp COLON     &kp COMMA       &kp PERIOD    &kp EQUAL             &kp SLASH
+&trans     &trans           &trans             &trans                &trans                 &trans              &trans         &trans                                                            &kp PIPE
             >;
         };
 
