@@ -64,7 +64,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R             &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                    &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 TAB  &mt LEFT_SHIFT INT_MUHENKAN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
@@ -75,7 +75,7 @@
         arrow-character {
             bindings = <
 &kp ESC    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR                                                &kp ASTERISK  &kp F2          &kp UP_ARROW  &kp NON_US_BACKSLASH  &kp BACKSPACE
-&kp SQT    &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp F13        &kp F6        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp AT
+&kp SQT    &kp PERCENT      &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &kp DELETE     &kp F6        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp AT
 &kp TILDE  &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp LBKT              &kp RBKT               &kp UNDERSCORE      &kp SEMICOLON  &kp COLON     &kp COMMA       &kp PERIOD    &kp EQUAL             &kp SLASH
 &trans     &trans           &trans             &trans                &trans                 &trans              &trans         &trans                                                            &kp PIPE
             >;
@@ -83,10 +83,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp F1           &kp F2           &kp F3           &kp F4                                                     &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&kp PRINTSCREEN             &kp F5           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                           &kp PIPE
+&kp MINUS                   &kp F1           &kp F2           &kp F3           &kp F4                                                 &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp PRINTSCREEN             &kp F5           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp DELETE  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp SLASH   &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans      &trans                                                           &kp PIPE
             >;
         };
 
