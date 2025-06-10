@@ -33,7 +33,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -42,14 +41,16 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-// combosやmacrosと同じ階層に以下のbihaviorsを追記
-// スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
+    // combosやmacrosと同じ階層に以下のbihaviorsを追記
+    // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
+
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -59,10 +60,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                 &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                     &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
+&kp Q             &kp W      &kp E         &kp R             &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))             &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                 &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
