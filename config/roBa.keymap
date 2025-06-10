@@ -65,7 +65,7 @@
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>,;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         arrow-character {
