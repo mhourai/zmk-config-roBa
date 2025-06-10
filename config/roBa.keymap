@@ -29,6 +29,11 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+// #includeのあとのあたりにスクロール量変更の定義を追記
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -36,6 +41,17 @@
 
 / {
     combos { compatible = "zmk,combos"; };
+
+// combosやmacrosと同じ階層に以下のbihaviorsを追記
+// スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
+    behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
 
     keymap {
         compatible = "zmk,keymap";
@@ -48,7 +64,7 @@
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>,;
         };
 
         arrow-character {
