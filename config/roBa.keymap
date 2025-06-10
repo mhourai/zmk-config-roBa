@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -28,7 +29,6 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -42,9 +42,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                    &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Q             &kp W      &kp E         &kp R             &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))                 &lt 3 DELETE   &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &kp COLON                     &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 TAB  &mt LEFT_SHIFT JP_HANZEN      &lt 2 ENTER    &lt 1 SPACE                             &kp DEL
             >;
 
@@ -53,10 +53,10 @@
 
         arrow-character {
             bindings = <
-&kp ESC    &kp EXCLAMATION  &kp JP_DQUOTE      &kp HASH              &kp DOLLAR                                                &kp JP_ASTERISK  &kp F2          &kp UP_ARROW  &kp JP_YEN  &kp BACKSPACE
-&kp JP_QUOTE    &kp PERCENT      &kp JP_AMPERSAND      &kp JP_LPAREN  &kp JP_RPAREN  &trans   &kp DELETE     &kp F6        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT             &kp JP_AT
-&kp JP_TILDE  &kp JP_LBRACE   &kp JP_RBRACE    &kp JP_LBRACKET              &kp JP_RBRACKET               &kp UNDERSCORE      &kp SEMICOLON  &kp JP_COLON     &kp COMMA       &kp PERIOD    &kp JP_EQUAL             &kp SLASH
-&trans     &trans           &trans             &trans                &trans                 &trans              &trans         &trans                                                            &kp JP_PIPE
+&kp ESC       &kp EXCLAMATION  &kp JP_DQUOTE     &kp HASH         &kp DOLLAR                                          &kp JP_ASTERISK  &kp F2          &kp UP_ARROW  &kp JP_YEN    &kp BACKSPACE
+&kp JP_QUOTE  &kp PERCENT      &kp JP_AMPERSAND  &kp JP_LPAREN    &kp JP_RPAREN    &trans              &kp DELETE     &kp F6           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT     &kp JP_AT
+&kp JP_TILDE  &kp JP_LBRACE    &kp JP_RBRACE     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp UNDERSCORE      &kp SEMICOLON  &kp JP_COLON     &kp COMMA       &kp PERIOD    &kp JP_EQUAL  &kp SLASH
+&trans        &trans           &trans            &trans           &trans           &trans              &trans         &trans                                                       &kp JP_PIPE
             >;
         };
 
@@ -82,10 +82,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB3  &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mo 5     &mkp MB2
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &mkp MB2
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB1  &mkp MB3  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB1  &mo 5     &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &mkp MB2
             >;
         };
 
