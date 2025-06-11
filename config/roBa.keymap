@@ -76,6 +76,8 @@
 &kp PLUS       &kp RIGHT_BRACE  &kp PIPE     &kp RIGHT_BRACKET  &kp BACKSLASH         &kp JP_UNDERSCORE      &kp UNDER   &kp SEMI           &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE
 &trans         &trans           &trans       &trans             &trans                &trans                 &trans      &trans                                                                &kp JP_PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         NUM {
