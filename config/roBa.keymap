@@ -1,14 +1,12 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
@@ -44,7 +42,6 @@
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
-
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -85,7 +82,7 @@
 &trans         &trans           &trans       &trans             &trans                &trans                 &trans      &trans                                                                &kp JP_PIPE
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         NUM {
