@@ -63,15 +63,6 @@
         };
     };
 
-    macros {
-        macro_left_click: macro_left_click {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp>;
-            label = "MACRO_LEFT_CLICK";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
