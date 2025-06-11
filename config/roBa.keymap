@@ -105,6 +105,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 5   &mkp MB1
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &mkp MB2
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
