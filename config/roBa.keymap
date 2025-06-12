@@ -58,15 +58,6 @@
 
             tap-ms = <20>;
         };
-
-        encoder_msc_down_up_fast: encoder_msc_down_up_fast {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_MSC_DOWN_UP_FAST";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(5)>, <&msc MOVE_Y(-5)>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -122,7 +113,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &mkp MB2
             >;
 
-            sensor-bindings = <&encoder_msc_down_up_fast>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
