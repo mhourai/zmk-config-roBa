@@ -128,7 +128,7 @@
         Shortcut {
             bindings = <
 &trans  &trans         &kp RG(E)  &trans              &trans                               &kp RG(RC(LEFT))  &none        &none           &none              &none
-&trans  &kp LC(LS(S))  &trans     &kp LA(LEFT_ARROW)  &kp RA(RIGHT)    &trans      &trans  &trans            &trans       &kp RC(RG(F4))  &trans             &trans
+&trans  &kp LC(LS(S))  &trans     &kp LA(LEFT_ARROW)  &kp RA(RIGHT)    &trans      &none   &none             &none        &kp RC(RG(F4))  &none              &none
 &trans  &none          &none      &kp RG(V)           &kp RC(RS(N))    &trans      &none   &kp RC(RG(LEFT))  &kp RG(TAB)  &kp RC(RG(D))   &kp RG(RC(RIGHT))  &none
 &trans  &trans         &trans     &trans              &kp LC(LA(TAB))  &trans      &trans  &trans                                                            &none
             >;
