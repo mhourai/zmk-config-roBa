@@ -127,10 +127,10 @@
 
         Shortcut {
             bindings = <
-&trans  &trans         &kp RG(E)  &trans     &trans                               &kp RG(RC(LEFT))  &none        &none            &none              &none
-&trans  &kp LC(LS(S))  &trans     &trans     &trans           &trans      &trans  &trans            &trans       &kp RC(RG(F4))   &trans             &trans
-&trans  &none          &none      &kp RG(V)  &trans           &trans      &none   &kp RC(RG(LEFT))  &kp RG(TAB)  &kp RC(RG(DQT))  &kp RG(RC(RIGHT))  &none
-&trans  &trans         &trans     &trans     &kp LC(LA(TAB))  &trans      &trans  &trans                                                             &none
+&trans  &trans         &kp RG(E)  &trans     &trans                               &kp RG(RC(LEFT))  &none        &none           &none              &none
+&trans  &kp LC(LS(S))  &trans     &trans     &trans           &trans      &trans  &trans            &trans       &kp RC(RG(F4))  &trans             &trans
+&trans  &none          &none      &kp RG(V)  &trans           &trans      &none   &kp RC(RG(LEFT))  &kp RG(TAB)  &kp RC(RG(D))   &kp RG(RC(RIGHT))  &none
+&trans  &trans         &trans     &trans     &kp LC(LA(TAB))  &trans      &trans  &trans                                                            &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
