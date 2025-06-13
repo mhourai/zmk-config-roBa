@@ -124,10 +124,10 @@
 
         MOUSE {
             bindings = <
-&ret_kp Q         &ret_kp W      &ret_kp E         &ret_kp R             &ret_kp T                                          &ret_kp Y      &ret_kp U  &ret_kp I      &ret_kp O  &ret_kp P
-&ret_kp A         &ret_kp S      &ret_kp D         &ret_kp F             &ret_kp G    &none              &trans             &ret_kp H      &ret_kp J  &ret_kp K      &ret_kp L  &ret_kp MINUS
-&ret_kp Z         &ret_kp X      &ret_kp C         &ret_kp V             &ret_kp B    &ret_kp PLUS       &ret_kp SEMICOLON  &ret_kp N      &ret_kp M  &ret_kp COMMA  &mo 5      &mkp MB1
-&ret_kp LEFT_GUI  &ret_kp SPACE  &ret_kp LEFT_ALT  &ret_kp LEFT_CONTROL  &ret_kp TAB  &ret_kp GRAVE      &ret_kp ENTER      &ret_kp SPACE                                       &mkp MB2
+&ret_kp Q         &ret_kp W      &ret_kp E         &ret_kp R             &ret_kp T                                        &ret_kp Y      &ret_kp U  &ret_kp I      &ret_kp O  &ret_kp P
+&ret_kp A         &ret_kp S      &ret_kp D         &ret_kp F             &ret_kp G  &none              &trans             &ret_kp H      &ret_kp J  &ret_kp K      &ret_kp L  &ret_kp MINUS
+&ret_kp Z         &ret_kp X      &ret_kp C         &ret_kp V             &ret_kp B  &ret_kp PLUS       &ret_kp SEMICOLON  &ret_kp N      &ret_kp M  &ret_kp COMMA  &mo 5      &mkp MB1
+&ret_kp LEFT_GUI  &ret_kp SPACE  &ret_kp LEFT_ALT  &ret_kp LEFT_CONTROL  &mo 4      &ret_kp GRAVE      &ret_kp ENTER      &ret_kp SPACE                                       &mkp MB2
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
