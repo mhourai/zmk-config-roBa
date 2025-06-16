@@ -50,12 +50,9 @@
     combos {
         compatible = "zmk,combos";
 
-        aaa {
+        asdfad {
             bindings = <&kp QUESTION>;
-            key-positions = <40 39>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
-            layers = <0>;
+            key-positions = <39>;
         };
     };
 
