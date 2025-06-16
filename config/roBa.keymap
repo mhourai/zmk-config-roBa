@@ -52,7 +52,7 @@
 
         aaa {
             bindings = <&kp PERIOD>;
-            key-positions = <40>;
+            key-positions = <40 39>;
             timeout-ms = <100>;
             require-prior-idle-ms = <200>;
             layers = <0>;
