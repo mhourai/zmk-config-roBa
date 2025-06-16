@@ -50,9 +50,19 @@
     combos {
         compatible = "zmk,combos";
 
-        asdfad {
+        click {
+            bindings = <&kp SLASH>;
+            key-positions = <35>;
+        };
+
+        rclick {
             bindings = <&kp QUESTION>;
-            key-positions = <39>;
+            key-positions = <23>;
+        };
+
+        scrool {
+            bindings = <&kp PERIOD>;
+            key-positions = <3>;
         };
     };
 
