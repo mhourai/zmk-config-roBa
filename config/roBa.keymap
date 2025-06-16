@@ -50,19 +50,19 @@
     combos {
         compatible = "zmk,combos";
 
-        click {
-            bindings = <&kp SLASH>;
-            key-positions = <35>;
-        };
-
         rclick {
             bindings = <&kp QUESTION>;
-            key-positions = <23>;
+            key-positions = <42>;
         };
 
         scrool {
             bindings = <&kp PERIOD>;
-            key-positions = <3>;
+            key-positions = <32>;
+        };
+
+        click {
+            bindings = <&kp A>;
+            key-positions = <33>;
         };
     };
 
