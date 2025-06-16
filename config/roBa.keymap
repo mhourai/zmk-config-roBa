@@ -47,24 +47,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        rclick {
-            bindings = <&kp QUESTION>;
-            key-positions = <42>;
-        };
-
-        scrool {
-            bindings = <&kp PERIOD>;
-            key-positions = <32>;
-        };
-
-        click {
-            bindings = <&kp A>;
-            key-positions = <33>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
     // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
