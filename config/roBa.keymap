@@ -82,21 +82,6 @@
     };
 
     macros {
-        ret_kp: ret_kp {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&to 0 &macro_param_1to1>,
-                <&macro_press>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_param_1to1>,
-                <&macro_release>,
-                <&kp MACRO_PLACEHOLDER>;
-
-            label = "RET_KP";
-        };
-
         exit_AML: exit_AML {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
@@ -183,10 +168,10 @@
 
         Shortcut {
             bindings = <
-&trans  &trans         &kp RG(E)  &trans         &trans                               &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none              &none
-&trans  &kp LC(LS(S))  &trans     &kp LA(RIGHT)  &kp RA(LEFT)     &trans      &none   &none             &none              &kp RC(RG(F4))  &none              &none
-&trans  &none          &none      &kp RG(V)      &kp RC(RS(N))    &trans      &none   &kp RC(RG(LEFT))  &kp RG(TAB)        &kp RC(RG(D))   &kp RG(RC(RIGHT))  &none
-&trans  &trans         &trans     &trans         &kp LC(LA(TAB))  &trans      &trans  &trans                                                                  &none
+&trans  &trans         &kp RG(E)  &trans         &trans                               &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none  &none
+&trans  &kp LC(LS(S))  &trans     &kp LA(RIGHT)  &kp RA(LEFT)     &trans      &none   &kp RG(RC(TAB))   &kp RC(RG(D))      &kp RG(RC(F4))  &none  &none
+&trans  &none          &none      &kp RG(V)      &kp RC(RS(N))    &trans      &none   &kp RC(RG(LEFT))  &kp RG(RC(RIGHT))  &none           &none  &none
+&trans  &trans         &trans     &trans         &kp LC(LA(TAB))  &trans      &trans  &trans                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
