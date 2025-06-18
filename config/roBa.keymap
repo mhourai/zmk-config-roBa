@@ -107,7 +107,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LSHIFT A      &kp S      &kp D         &kp F             &kp G      &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT MINUS
+&mt LSHIFT A      &kp S      &kp D         &kp F             &kp G      &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L    &lt 3 MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 4 TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                             &kp QUESTION
             >;
@@ -118,7 +118,7 @@
         arrow-character {
             bindings = <
 &kp ESC        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH           &kp DOLLAR                                               &kp DOUBLE_QUOTES  &none             &kp UP_ARROW   &kp JP_YEN        &kp BACKSPACE
-&kp AMPERSAND  &kp PERCENT      &kp CARET    &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans                 &kp DELETE  &none              &kp LEFT_ARROW    &kp DOWN       &kp RIGHT         &kp LEFT_BRACKET
+&kp AMPERSAND  &kp PERCENT      &kp CARET    &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans                 &kp DELETE  &kp PLUS           &kp LEFT_ARROW    &kp DOWN       &kp RIGHT         &kp LEFT_BRACKET
 &kp PLUS       &kp RIGHT_BRACE  &kp PIPE     &kp RIGHT_BRACKET  &kp BACKSLASH         &kp JP_UNDERSCORE      &kp UNDER   &kp SEMI           &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp JP_PIPE
 &trans         &trans           &trans       &trans             &trans                &trans                 &trans      &trans                                                                &kp JP_PIPE
             >;
@@ -168,10 +168,10 @@
 
         Shortcut {
             bindings = <
-&trans  &trans         &kp RG(E)  &trans         &trans                               &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none  &none
-&trans  &kp LC(LS(S))  &trans     &kp LA(RIGHT)  &kp RA(LEFT)     &trans      &none   &kp RG(TAB)       &kp RC(RG(D))      &kp RG(RC(F4))  &none  &none
-&trans  &none          &none      &kp RG(V)      &kp RC(RS(N))    &trans      &none   &kp RC(RG(LEFT))  &kp RG(RC(RIGHT))  &none           &none  &none
-&trans  &trans         &trans     &trans         &kp LC(LA(TAB))  &trans      &trans  &trans                                                      &none
+&trans  &trans         &kp RG(E)  &trans         &kp RG(UP_ARROW)                      &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none  &none
+&trans  &kp LC(LS(S))  &trans     &kp LA(RIGHT)  &kp RA(LEFT)      &trans      &none   &kp RG(TAB)       &kp RC(RG(D))      &kp RG(RC(F4))  &none  &none
+&trans  &none          &none      &kp RG(V)      &kp RC(RS(N))     &trans      &none   &kp RC(RG(LEFT))  &kp RG(RC(RIGHT))  &none           &none  &none
+&trans  &trans         &trans     &trans         &kp LC(LA(TAB))   &trans      &trans  &trans                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
