@@ -80,24 +80,11 @@
             quick-tap-ms = <200>;
         };
 
-           
-
         td_mt: tap_dance_mod_tap {
-                       
-
             compatible = "zmk,behavior-tap-dance";
-
-                       #
-
-            binding-cells = <0>;
-
-                       
-
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-
-                       
-
-            bindings = <&lt LEFT_SHIFT GRAVE, <&kp LC(SPC)>;
+            bindings = <&lt LEFT_SHIFT GRAVE>, <&kp LANGUAGE_1>;
         };
     };
 
