@@ -22,7 +22,7 @@
         require-prior-idle-ms = <200>;
         excluded-positions = <
             42 // ?
-            32 // /
+            33 // /
         >;
     };
 
