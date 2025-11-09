@@ -5,7 +5,7 @@ manifest:
     - name: mhourai
       url-base: https://github.com/mhourai
     - name: prospector
-      url-base: https://github.com/mhourai
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
