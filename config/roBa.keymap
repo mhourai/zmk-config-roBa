@@ -11,6 +11,12 @@
 
 &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
+// カーソルスピードの設定　3/2 を意味する（1.5倍ということ）
+&trackball_listener {
+    input-processors = <&zip_xy_scaler 3 2>;
+};
+
+
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
