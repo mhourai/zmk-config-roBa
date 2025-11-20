@@ -1,6 +1,5 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
-#include <scroll-snap.dtsi>
 
 &default_transform {
     col-offset = <6>;
