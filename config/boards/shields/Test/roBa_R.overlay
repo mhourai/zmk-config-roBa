@@ -33,15 +33,6 @@
         device = <&trackball>;
 
         input-processors = <&zip_temp_layer 4 10000>;
-
-    scroller {
-        layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_snap
-        >;
-    };
-
     };
 };
 
