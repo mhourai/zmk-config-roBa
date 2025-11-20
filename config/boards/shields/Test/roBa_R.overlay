@@ -1,5 +1,6 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
+#include <scroll-snap.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -78,3 +79,15 @@
 };
 
 
+&trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+    scroller {
+        layers = <5>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_snap
+        >;
+    };
+};
