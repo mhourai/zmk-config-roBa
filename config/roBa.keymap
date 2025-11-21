@@ -51,7 +51,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        test {
+            bindings = <&none>;
+            key-positions = <32 31 30>;
+        };
+    };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
     // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
