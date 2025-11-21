@@ -183,10 +183,10 @@
 
         Shortcut {
             bindings = <
-&kp RG(UP_ARROW)    &trans         &kp RG(E)  &trans              &kp RG(UP_ARROW)                            &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none  &none
-&kp RG(DOWN_ARROW)  &kp LC(LS(S))  &trans     &kp RG(DOWN_ARROW)  &kp RA(LEFT)      &trans      &none         &kp RG(TAB)       &kp RC(RG(D))      &kp RC(RG(F4))  &none  &none
-&trans              &none          &none      &kp RG(V)           &kp RC(RS(N))     &trans      &none         &kp RC(RG(LEFT))  &kp RG(RC(RIGHT))  &none           &none  &none
-&trans              &trans         &trans     &trans              &kp LC(LA(TAB))   &trans      &kp RG(LEFT)  &kp RG(RIGHT)                                               &none
+&kp RG(UP_ARROW)    &trans         &kp RG(E)  &trans              &kp RG(UP_ARROW)                             &kp RG(RS(LEFT))  &kp RS(RG(RIGHT))  &none           &none  &none
+&kp RG(DOWN_ARROW)  &kp LC(LS(S))  &trans     &kp RG(DOWN_ARROW)  &kp RA(LEFT)      &trans       &none         &kp RG(TAB)       &kp RC(RG(D))      &kp RC(RG(F4))  &none  &none
+&trans              &none          &none      &kp RG(V)           &kp RC(RS(N))     &trans       &none         &kp RC(RG(LEFT))  &kp RG(RC(RIGHT))  &none           &none  &none
+&trans              &trans         &trans     &trans              &kp LC(LA(TAB))   &kp DEL      &kp RG(LEFT)  &kp RG(RIGHT)                                               &none
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
