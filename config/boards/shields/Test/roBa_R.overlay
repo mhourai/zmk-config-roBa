@@ -23,7 +23,6 @@
         excluded-positions = < 
             31 // ,
             32 // .
-            33 // /
         >;
     };
 
