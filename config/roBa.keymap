@@ -40,6 +40,7 @@
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
@@ -113,10 +114,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I        &kp O         &kp P
-&mt LSHIFT A      &kp S      &kp D         &kp F             &kp G      &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &lt 3 K      &kp L         &lt 3 MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &lt 3 COMMA  &lt 5 PERIOD  &kp SLASH
-&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                    &kp QUESTION
+&kp Q             &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I      &kp O         &kp P
+&mt LSHIFT A      &kp S      &kp D         &kp F             &kp G      &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &lt 3 K    &kp L         &mt RIGHT_SHIFT MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &lt 5 PERIOD  &kp SLASH
+&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                  &kp QUESTION
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -155,10 +156,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &lt 5 PERIOD  &mkp MB1
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &mkp MB2
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &lt 5 PERIOD  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
