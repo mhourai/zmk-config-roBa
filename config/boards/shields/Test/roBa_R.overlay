@@ -21,9 +21,9 @@
         #input-processor-cells = <2>;
         require-prior-idle-ms = <200>;
         excluded-positions = <
-            33 // . 
-            42 // ?
-            32 // /
+            30 // m 
+            31 // ,
+            32 // .
         >;
     };
 
