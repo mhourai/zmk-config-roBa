@@ -56,7 +56,17 @@
 
         scrool {
             bindings = <&mo 5>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        shift-tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 13>;
         };
     };
 
