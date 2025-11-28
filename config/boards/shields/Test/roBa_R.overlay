@@ -21,8 +21,8 @@
         #input-processor-cells = <2>;
         require-prior-idle-ms = <200>;
         excluded-positions = < 
-            19 // .  left-click
-            20 // /  right-click
+            31 // .  left-click
+            32 // /  right-click
         >;
     };
 
