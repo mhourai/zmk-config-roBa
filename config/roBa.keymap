@@ -68,6 +68,11 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
         };
+
+        alt+tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <30 31>;
+        };
     };
 
     // combosやmacrosと同じ階層に以下のbihaviorsを追記
