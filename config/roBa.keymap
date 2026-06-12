@@ -220,10 +220,10 @@
 
         layer_8 {
             bindings = <
-&trans  &kp RA(RIGHT)       &trans  &trans                 &kp RG(V)                               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp BACKSPACE
-&trans  &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))  &kp RC(C)    &trans           &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &kp MINUS
-&trans  &trans              &trans  &kp RC(RS(N))          &kp RC(V)    &trans           &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans
-&trans  &trans              &trans  &trans                 &kp RA(TAB)  &kp RG(TAB)      &kp HOME  &kp END                                                             &kp ESC
+&trans  &kp RA(RIGHT)       &trans  &trans                 &kp RG(V)                                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp BACKSPACE
+&trans  &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))  &kp RC(C)    &trans           &kp RS(RG(LEFT))   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &kp MINUS
+&trans  &trans              &trans  &kp RC(RS(N))          &kp RC(V)    &trans           &kp RS(RG(RIGHT))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans
+&trans  &trans              &trans  &trans                 &kp RA(TAB)  &kp RG(TAB)      &kp HOME           &kp END                                                             &kp ESC
             >;
 
             label = "number&shotrcut";
