@@ -137,7 +137,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R             &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHIFT A      &lt 6 S    &lt 1 D       &lt 2 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
+&mt LSHIFT A      &lt 6 S    &lt 8 D       &lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B          &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt SPACE TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
             >;
@@ -205,6 +205,28 @@
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &kp F1  &kp F2   &kp F3   &kp F4   &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
+            >;
+
+            label = "function";
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &kp RA(RIGHT)       &trans  &trans                 &kp RG(V)                      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH        &kp BACKSPACE
+&trans  &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))  &kp RC(C)  &trans      &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &kp MINUS
+&trans  &trans              &trans  &kp RC(RS(N))          &kp RC(V)  &trans      &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans
+&trans  &trans              &trans  &trans                 &trans     &trans      &trans  &trans                                                              &trans
+            >;
+
+            label = "number&shotrcut";
         };
 
         // シングル・ダブルタップでの全角半角切り替え
