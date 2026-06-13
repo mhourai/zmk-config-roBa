@@ -181,7 +181,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mo 0                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
