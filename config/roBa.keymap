@@ -59,19 +59,9 @@
             key-positions = <32 31>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift-tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        alt+tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <30 31>;
+        esc {
+            bindings = <&none>;
+            key-positions = <0 1>;
         };
     };
 
@@ -220,10 +210,10 @@
 
         layer_8 {
             bindings = <
-&kp ESC  &kp RA(RIGHT)       &trans  &kp RC(T)              &kp RC(T)                                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&trans   &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))  &kp F2         &trans           &kp RS(RG(LEFT))   &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&trans   &trans              &trans  &kp RG(V)              &kp RC(RS(N))  &trans           &kp RS(RG(RIGHT))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&trans   &trans              &trans  &trans                 &kp RA(TAB)    &kp RG(TAB)      &kp HOME           &kp END                                                             &kp ESC
+&kp ESC  &kp RA(RIGHT)       &trans  &kp RC(T)               &kp RC(T)                                              &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&trans   &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))   &kp F2             &trans           &kp RS(RG(LEFT))   &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&trans   &trans              &trans  &kp RG(V)               &kp RC(RS(N))      &trans           &kp RS(RG(RIGHT))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
+&trans   &trans              &trans  &kp RS(RG(LEFT_ARROW))  &kp RS(RG(RIGHT))  &kp RG(TAB)      &kp HOME           &kp END                                                             &kp ESC
             >;
 
             label = "number&shotrcut";
