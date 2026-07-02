@@ -102,6 +102,75 @@
         };
 
         // シングル・ダブルタップでの全角半角切り替えビヘイビア
+
+        // Positional Hold-Tap（HRM改善）: 反対の手のキーが押されたときだけホールドを許可
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-on-release;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
+            hold-trigger-on-release;
+        };
+
+        hml_lt: home_row_layer_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-on-release;
+        };
+
+        hmr_lt: home_row_layer_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
+            hold-trigger-on-release;
+        };
+
+        // Sticky Shift: ホールド=通常Shift、タップ=マイナス、ダブルタップ=Sticky Shift
+        td_sticky_shift: tap_dance_sticky_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&sk RIGHT_SHIFT>;
+        };
+
+        hmr_sticky_minus: hmr_sticky_minus {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            bindings = <&kp>, <&td_sticky_shift>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39>;
+            hold-trigger-on-release;
+        };
     };
 
     macros {
@@ -131,9 +200,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHIFT A      &kp S      &lt 1 D       &lt 2 F           &kp G      &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B      &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp Q         &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I      &kp O       &kp P
+&hml LSHIFT A &kp S      &hml_lt 1 D   &hml_lt 2 F       &kp G      &hml END HOME             &hmr_lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &hmr_sticky_minus RIGHT_SHIFT 0
+&hml LEFT_SHIFT Z &kp X  &kp C         &kp V             &kp B      &hml_lt 6 COLON           &hmr_lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
             >;
 
@@ -173,10 +242,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans     &trans     &trans     &trans    &trans                      &trans  &trans  &trans    &trans    &trans
+&sk LGUI   &sk LSHFT  &sk LCTRL  &sk LALT  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
+&trans     &trans     &trans     &trans    &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans     &trans     &trans     &trans    &trans  &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
