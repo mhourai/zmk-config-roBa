@@ -117,6 +117,58 @@
             hold-trigger-key-positions = <34 22 0 10 11 3 2 1 35 25 24 36 12 23 13 14 4 15 27 26 37 38 39>;
         };
 
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <41 40 28 16 29 17 5 6 18 30 31 19 7 8 20 32 42 33 21 9>;
+        };
+
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <34 22 10 0 1 11 23 35 36 13 12 4 3 2 14 15 25 24 37 38 26 27 39>;
+            hold-trigger-on-release;
+        };
+
+        hml_lt: home_row_layer_left {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <40 41 28 17 5 16 29 30 18 6 7 9 8 20 21 42 32 31 19 33>;
+        };
+
+        hmr_lt: home_row_layer_right {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <34 0 10 23 11 2 3 4 26 12 1 22 35 36 24 13 27 15 14 25 38 37 39>;
+            hold-trigger-on-release;
+        };
+
         // シングル・ダブルタップでの全角半角切り替えビヘイビア
     };
 
@@ -147,10 +199,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R                 &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHIFT A      &lt 6 S    &lt 8 D       &lt 7 F               &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &hmr_sticky_minus RIGHT_SHIFT 0
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                 &kp B          &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mt SPACE TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
+&kp Q              &kp W      &kp E         &kp R                 &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
+&hml LSHIFT A      &lt 6 S    &hml_lt 8 D   &hml_lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &hmr_sticky_minus RIGHT_SHIFT 0
+&hml LEFT_SHIFT Z  &kp X      &kp C         &kp V                 &kp B          &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_GUI       &kp SPACE  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mt SPACE TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
