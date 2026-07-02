@@ -96,6 +96,27 @@
             quick-tap-ms = <200>;
         };
 
+        td_sticky_shift: tap_dance_sticky_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&sk RIGHT_SHIFT>;
+
+            tapping-term-ms = <200>;
+        };
+
+        hmr_sticky_minus: hmr_sticky_minus {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&td_sticky_shift>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <120>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <34 22 0 10 11 3 2 1 35 25 24 36 12 23 13 14 4 15 27 26 37 38 39>;
+        };
+
         // シングル・ダブルタップでの全角半角切り替えビヘイビア
     };
 
@@ -127,7 +148,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R             &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHIFT A      &lt 6 S    &lt 8 D       &lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
+&mt LSHIFT A      &lt 6 S    &lt 8 D       &lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &hmr_sticky_minus RIGHT_SHIFT 0
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B          &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt SPACE TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
             >;
