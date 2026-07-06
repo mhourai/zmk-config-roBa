@@ -127,7 +127,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W      &kp E         &kp R             &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LSHIFT A      &lt 6 S    &lt 8 D       &lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
+&mt LSHIFT A      &kp S      &lt 8 D       &lt 7 F           &kp G          &mt END HOME              &lt 3 DELETE  &kp H        &kp J  &kp K      &kp L       &mt RIGHT_SHIFT MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &kp B          &lt 6 COLON               &lt 6 SEMI    &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_GUI      &kp SPACE  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt SPACE TAB  &mt LEFT_SHIFT GRAVE      &lt 2 ENTER   &lt 1 SPACE                                &kp QUESTION
             >;
@@ -210,10 +210,10 @@
 
         layer_8 {
             bindings = <
-&kp ESC  &kp RA(RIGHT)       &trans  &kp RC(T)               &kp RC(T)                                              &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&trans   &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))   &kp F2             &trans           &kp RS(RG(LEFT))   &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&trans   &trans              &trans  &kp RG(V)               &kp RC(RS(N))      &trans           &kp RS(RG(RIGHT))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&trans   &trans              &trans  &kp RS(RG(LEFT_ARROW))  &kp RS(RG(RIGHT))  &kp RG(TAB)      &kp HOME           &kp END                                                             &kp ESC
+&kp ESC  &kp RA(RIGHT)       &trans  &kp RC(T)               &kp RC(T)                                     &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&trans   &kp RA(LEFT_ARROW)  &trans  &kp RS(RC(SEMICOLON))   &kp F2             &trans           &trans    &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&trans   &trans              &trans  &kp RG(V)               &kp RC(RS(N))      &trans           &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
+&trans   &trans              &trans  &kp RS(RG(LEFT_ARROW))  &kp RS(RG(RIGHT))  &kp RG(TAB)      &kp HOME  &kp END                                                             &kp ESC
             >;
 
             label = "number&shotrcut";
