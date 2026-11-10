@@ -19,16 +19,6 @@
 };
 
 / {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <200>;
-        excluded-positions = < 
-            31 // .  left-click
-            32 // /  right-click
-        >;
-    };
-
    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "okay";
@@ -36,8 +26,7 @@
 
         // DYA Studio から実行時に調整できるランタイム入力プロセッサを使用
         // mouse: スクロールレイヤー(5)以外で動作 / scroll: スクロールレイヤー(5)のみで動作
-        input-processors = <&zip_temp_layer 4 10000>,
-                           <&mouse_runtime_input_processor>,
+        input-processors = <&mouse_runtime_input_processor>,
                            <&scroll_runtime_input_processor>;
     };
 };
@@ -45,6 +34,12 @@
 &mouse_runtime_input_processor {
     processor-label = "mouse";
     active-layers = <0xFFFFFFDF>; // 全レイヤー (レイヤー5 を除く)
+
+    // オートマウスレイヤー (DYA Studio の temp-layer 設定から変更可能)
+    temp-layer-enabled;
+    temp-layer = <4>;                          // MOUSE レイヤー
+    temp-layer-activation-delay-ms = <100>;
+    temp-layer-deactivation-delay-ms = <10000>; // 操作が止まってから10秒で解除
 };
 
 &scroll_runtime_input_processor {

@@ -10,7 +10,6 @@
 #define NUM 3
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
 
-&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
@@ -44,7 +43,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
 
 &mt {
     flavor = "balanced";
