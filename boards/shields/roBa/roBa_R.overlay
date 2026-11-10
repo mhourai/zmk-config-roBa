@@ -1,4 +1,8 @@
 #include "roBa.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
+#include <input/processors/runtime-input-processor.dtsi>
+#include <dt-bindings/zmk/runtime_input_processor.h>
 
 &default_transform {
     col-offset = <6>;
@@ -7,19 +11,48 @@
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
+            , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
+            , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
 
 / {
-    trackball_listener {
-        status = "okay";
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <200>;
+        excluded-positions = < 
+            31 // .  left-click
+            32 // /  right-click
+        >;
+    };
+
+   trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        // DYA Studio から実行時に調整できるランタイム入力プロセッサを使用
+        // mouse: スクロールレイヤー(5)以外で動作 / scroll: スクロールレイヤー(5)のみで動作
+        input-processors = <&zip_temp_layer 4 10000>,
+                           <&mouse_runtime_input_processor>,
+                           <&scroll_runtime_input_processor>;
     };
+};
+
+&mouse_runtime_input_processor {
+    processor-label = "mouse";
+    active-layers = <0xFFFFFFDF>; // 全レイヤー (レイヤー5 を除く)
+};
+
+&scroll_runtime_input_processor {
+    processor-label = "scroll";
+    // REL_WHEEL を消費する代わりに REL_X / REL_Y をスクロールに変換
+    x-codes = <INPUT_REL_X>;
+    y-codes = <INPUT_REL_Y>;
+    xy-to-scroll-enabled;
+    active-layers = <0x00000020>; // レイヤー5 のみ
 };
 
 &pinctrl {
@@ -53,8 +86,13 @@
 
     trackball: trackball@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";
+        compatible = "cormoran,pmw3610";
         reg = <0>;
+        settings-id = "trackball";
+        cpi = <600>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
