@@ -50,7 +50,7 @@
 };
 
 // automouse-layer / scroll-layers は旧 PMW3610 ドライバ用のため削除。
-// DYA Studio 対応後は roBa_R.overlay の入力プロセッサ (zip_temp_layer / runtime input processor) で制御する。
+// DYA Studio 対応後は roBa_R.overlay のランタイム入力プロセッサ (temp-layer) で制御する。
 
 / {
     combos {
