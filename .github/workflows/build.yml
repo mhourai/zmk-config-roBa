@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    # cormoran 版 ZMK (main+dya) を使うため、公式 ZMK の main の再利用ワークフローを使用
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
